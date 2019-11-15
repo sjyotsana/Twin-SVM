@@ -33,7 +33,7 @@ class TwinSVMClassifier(BaseEstimator, ClassifierMixin):
         assert (type(self.regulz2) in [float,int])
         assert (self.fuzzy in [0,1])
         assert (type(self.kernel_param) in [float,int])
-        assert (self.kernel_type in [0,1,2,3])
+        assert (self.kernel_type in [0,1,2,3,4])
         ####################fill in here
         # mean -centering, doing std 
         #X_t = preprocessing.scale(X)
