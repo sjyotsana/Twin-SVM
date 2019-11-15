@@ -21,6 +21,10 @@ def kernelfunction(Type, u, v, p):
     if(Type==3):
         temp = u-v
         return pow(math.e,(-np.dot(temp,temp)/(p**2)))
+    if(Type==4):
+        return np.tanh(np.dot(u,v)+1)
+    
+    
 
 def centertrainKernel(K):
     m,n = K.shape
